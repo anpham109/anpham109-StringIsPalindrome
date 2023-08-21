@@ -12,6 +12,10 @@ public class Palindrome {
      * @return true if str is a palindrome, false otherwise.
      */
     public boolean pal(String str){
+        String reverseString = new StringBuilder(str).reverse().toString();
+        if(reverseString.equals(str)){
+            return true;
+        }
         return false;
     }
 }
